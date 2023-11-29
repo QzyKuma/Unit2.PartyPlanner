@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp10529896.png'); /* Replace with your background image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#header2 {
+    color: black;
+    
+    backdrop-filter: blur(10px);
+    background-color: white;
+    border-radius: 8px;
+    padding-left: 38px;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#partyList {
+    margin-top: 20px;
+}
+
+#partyList div {
+    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent background */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(10px); /* Apply backdrop filter with blur effect */
+}
+
+#partyList div p {
+    margin: 0;
+}
+
+#partyList div button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#partyList div button:hover {
+    background-color: #d32f2f;
+}
